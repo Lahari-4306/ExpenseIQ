@@ -1,0 +1,42 @@
+.stat-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 22px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  animation: fadeIn 0.4s ease;
+}
+.stat-card:hover { transform: translateY(-2px); box-shadow: var(--shadow); }
+
+.stat-card-blue { border-top: 3px solid #3b82f6; }
+.stat-card-green { border-top: 3px solid #10b981; }
+.stat-card-amber { border-top: 3px solid #f59e0b; }
+.stat-card-rose { border-top: 3px solid #ef4444; }
+
+.stat-card-header {
+  display: flex; align-items: center; justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.stat-icon { font-size: 22px; }
+
+.stat-trend {
+  display: flex; align-items: center; gap: 3px;
+  font-size: 12px; font-weight: 600;
+  padding: 3px 8px; border-radius: 20px;
+}
+.trend-up { background: var(--error-light); color: var(--error); }
+.trend-down { background: var(--success-light); color: var(--success); }
+
+.stat-label {
+  font-size: 13px; color: var(--text-muted); margin-bottom: 6px; font-weight: 500;
+}
+.stat-value {
+  font-size: 24px; font-weight: 700; color: var(--text); line-height: 1;
+}
+.stat-subtitle {
+  font-size: 12px; color: var(--text-muted); margin-top: 6px;
+}
+.stat-trend-label {
+  font-size: 11px; color: var(--text-muted); margin-top: 4px;
+}
